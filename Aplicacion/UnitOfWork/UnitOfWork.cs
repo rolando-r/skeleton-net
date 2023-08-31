@@ -34,5 +34,13 @@ namespace Aplicacion.UnitOfWork
                 return _usuarios;
             }
         }
+        public async Task<int> SaveAsync()
+        {
+            return await context.SaveChangesAsync();
+        }
+        public void Dispose()
+        {
+            context.Dispose();
+        }
     }
 }
