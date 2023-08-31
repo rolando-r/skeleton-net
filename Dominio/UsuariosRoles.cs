@@ -1,5 +1,4 @@
 namespace Dominio;
-
 public class UsuariosRoles
 {
     public int UsuarioId { get; set; }
